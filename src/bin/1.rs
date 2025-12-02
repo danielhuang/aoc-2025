@@ -3,7 +3,7 @@ use aoc_2025::*;
 fn main() {
     let input = load_input();
 
-    let mut dial = 50i128;
+    let mut dial: Z = 50;
 
     let mut count2 = 0;
     let mut count1 = 0;
