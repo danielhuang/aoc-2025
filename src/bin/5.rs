@@ -11,14 +11,6 @@ fn main() {
         map.add(a.int(), b.int() + 1);
     }
 
-    let mut count = 0;
-
-    for n in body.lines() {
-        if map.contains(n.int()) {
-            count += 1;
-        }
-    }
-
-    cp(count);
+    cp(body.ints().ii().filter(|&n| map.contains(n)).count());
     cp(map.covered_size());
 }
